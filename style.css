@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+/* Responsive styles-----> */
+/* Mobile devices----> */
+
+
 /* Fonts-----> */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url(//db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME);
@@ -81,7 +85,7 @@ main {
 
 nav {
     background-image: linear-gradient(pink, blue, black);
-    /* width: 312px; */
+    width: 312px;
     height: 312px;
     position: absolute;
     border-radius: 10px;
@@ -100,9 +104,12 @@ button {
     margin: 10px;
 }
 
+button a:selection {
+    background-color: #6500e8;
+}
+
 button a {
     text-decoration: none;
-    color: black;
     font-family: Helvetica, sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -166,6 +173,7 @@ button:hover {
     color: #807c7c;
     margin: 10px;
 }
+
 /*- Footer style------> */
 footer {
     display: flex;
@@ -182,11 +190,13 @@ hr {
     border: 1px solid rgb(237, 235, 235);
     width: 1320px;
 }
-.footer-menu{
+
+.footer-menu {
     display: flex;
     margin-bottom: 150px;
 }
-.footer-menu a{
+
+.footer-menu a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
@@ -194,10 +204,31 @@ hr {
     font-family: poppins;
     margin: 10px;
 }
+
 /* Social links------> */
-.social-link{
+.social-link {
     color: #e3dfdf;
 }
-.social-link a{
+
+.social-link a {
     color: #FFFFFF;
+}
+
+/* Blog page style */
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3, 312px);
+    grid-gap: 25px;
+}
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+
+}
+.match img {
+    width: 90px;
+    height: 55px;
 }
