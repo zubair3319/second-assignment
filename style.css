@@ -8,7 +8,7 @@
 
 
 /* Fonts-----> */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url(//db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME);
 
 /* main style----> */
@@ -43,7 +43,7 @@ main {
 }
 
 .half-banner h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     /* font-weight: 700; */
     font-size: 5em;
 
@@ -131,7 +131,7 @@ article {
 }
 
 article h5 {
-    font-family: poppins;
+    font-family: Roboto Condensed;
     font-weight: 600;
     font-size: 1em;
 }
@@ -185,7 +185,7 @@ footer {
     color: #0E0AFC;
     font-size: 3em;
     /* font-weight: 600; */
-    font-family: poppins;
+    font-family: Roboto Condensed;
 }
 
 hr {
@@ -203,7 +203,7 @@ hr {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
-    font-family: poppins;
+    font-family: Roboto Condensed;
     margin: 10px;
 }
 
@@ -240,7 +240,7 @@ hr {
 /* Responsive styles-----> */
 /* Big smartphones (portrait)*/
 @media only screen and (max-width:768px) {
-    
+
     .top-banner {
         width: fit-content;
         display: grid;
@@ -264,8 +264,7 @@ hr {
     nav {
         background-image: none;
         flex-direction: row;
-        position: relative;
-        
+        position:relative;        
 
     }
 
@@ -278,6 +277,52 @@ hr {
         justify-content: center;
     }
 
+    hr {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .half-banner{
+        font-size: 1em;
+    }
+    .half-banner img{
+        width: 100%;
+    }
+    .second-part {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    nav {
+        background-image: none;
+        flex-direction: column;
+        position:relative;        
+
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+     footer{
+        justify-content: center;
+        width: 100%;
+     }
+    .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
     hr {
         width: 90%;
     }
