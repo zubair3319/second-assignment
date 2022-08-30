@@ -44,8 +44,8 @@ main {
 
 .half-banner h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 70px;
+    /* font-weight: 700; */
+    font-size: 5em;
 
 }
 
@@ -133,6 +133,7 @@ article {
 article h5 {
     font-family: poppins;
     font-weight: 600;
+    font-size: 1em;
 }
 
 article img {
@@ -181,8 +182,9 @@ footer {
     align-items: center;
     background-image: linear-gradient(pink, blue);
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
+    color: #0E0AFC;
+    font-size: 3em;
+    /* font-weight: 600; */
     font-family: poppins;
 }
 
@@ -206,20 +208,21 @@ hr {
 }
 
 /* Social links------> */
-.social-link {
+.social-link,
+.social-link a {
     color: #e3dfdf;
+    font-size: 30px;
 }
 
-.social-link a {
-    color: #FFFFFF;
-}
+
 
 /* Blog page style */
-.matches{
+.matches {
     display: grid;
     grid-template-columns: repeat(3, 312px);
     grid-gap: 25px;
 }
+
 .match {
     display: flex;
     align-items: center;
@@ -228,7 +231,47 @@ hr {
     padding: 20px;
 
 }
+
 .match img {
     width: 90px;
     height: 55px;
+}
+
+/* Responsive styles-----> */
+/* Big smartphones (portrait)*/
+@media only screen and (max-width:768px) {
+
+    .top-banner {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 316px 323px;
+    }
+
+    .second-part {
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: repeat(4, 1fr); */
+        justify-content: center;
+
+    }
+
+    nav {
+        background-image: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    hr {
+        width: 90%;
+    }
 }
